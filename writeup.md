@@ -4,11 +4,12 @@
 [//]: # (Image References)
 
 [image1]: ./examples/undistort_output.png "Undistorted"
-[image2]: ./test_images/test1.jpg "Undistorted 2"
-[image3]: ./test_images/straight_lines1.jpg "4 points"
-[image4]: ./examples/warped_straight_lines.jpg "perspective transform"
-[image5]: ./examples/binary_combo_example.jpg "binary image"
-[image7]: ./examples/formula.png "binary image"
+[image2]: ./md/undistorted_2.JPG "Undistorted 2"
+[image3]: ./md/4points.JPG "4 points"
+[image4]: ./md/ptransform.JPG "perspective transform"
+[image5]: ./md/binary.JPG "binary image"
+[image6]: ./md/polyfit.JPG "binary image"
+[image7]: ./md/formula.JPG "binary image"
 [image8]: ./output_images/straight_lines1.jpg "binary image"
 
 
@@ -81,6 +82,8 @@ We set margin as the 1/2 * width of the window, and the height of window is the 
 Finally, we can get the lane-line pixels of the left and right lane-line, then we utilze 'np.polyfit' function to do second-order polyfit. The belowing figure is a image which was already identified and polyfiitted.
 
 I do this part in the 'project_code.py', and in its 'getlines' function.
+
+ ![alt text][image6]
 
 #### 6. Calculate the radius of curvature of the lane and the position of the vehicle with respect to center
 
